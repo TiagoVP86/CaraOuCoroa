@@ -1,6 +1,5 @@
 package com.example.caraoucoroa;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -23,15 +22,14 @@ public class ResultadoActivity extends AppCompatActivity {
     Bundle dados = getIntent().getExtras();
     int numero = dados.getInt("numero");
 
-    if(numero == 0){//cara
+    if (numero == 0) {//cara
       binding.imageResultado.setImageResource(R.drawable.moeda_cara);
-    }else{//coroa
+    } else {//coroa
       binding.imageResultado.setImageResource(R.drawable.moeda_coroa);
     }
 
     binding.buttonVoltar.setOnClickListener(v -> {
       finish();
     });
-
   }
 }

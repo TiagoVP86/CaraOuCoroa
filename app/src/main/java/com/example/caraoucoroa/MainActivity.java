@@ -1,11 +1,10 @@
 package com.example.caraoucoroa;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.caraoucoroa.databinding.ActivityMainBinding;
 
@@ -31,6 +30,5 @@ public class MainActivity extends AppCompatActivity {
 
       startActivity(intent);
     });
-
   }
 }
